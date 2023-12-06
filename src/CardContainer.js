@@ -16,7 +16,7 @@ function BasicExample() {
                             Some quick example text to build on the card title and make up the
                             bulk of the card's content.
                         </Card.Text>
-                        <Button variant="primary">Старт</Button>
+                        <Button variant="primary">Запустить классический обратный вывод</Button>
                     </Card.Body>
                 </Card>
             </Col>
@@ -28,7 +28,7 @@ function BasicExample() {
                             Some quick example text to build on the card title and make up the
                             bulk of the card's content.
                         </Card.Text>
-                        <Button variant="primary">Старт</Button>
+                        <Button variant="primary">Запустить релевантный обратный вывод</Button>
                     </Card.Body>
                 </Card>
             </Col>
@@ -37,24 +37,24 @@ function BasicExample() {
             <Col>
             <Card style={{ width: '18rem' }}>
                 <Card.Body>
-                    <Card.Title>Классический обратный вывод</Card.Title>
+                    <Card.Title>Кластерно-релевантный обратный вывод</Card.Title>
                      <Card.Text>
                         Some quick example text to build on the card title and make up the
                             bulk of the card's content.
                     </Card.Text>
-                    <Button variant="primary">Старт</Button>
+                    <Button variant="primary">Запустить кластерно-релевантный обратный вывод</Button>
                 </Card.Body>
             </Card>  
             </Col>
             <Col>
             <Card style={{ width: '18rem' }}>
                 <Card.Body>
-                    <Card.Title>Классический обратный вывод</Card.Title>
+                    <Card.Title>Нейросетевой обратный вывод</Card.Title>
                      <Card.Text>
                         Some quick example text to build on the card title and make up the
                             bulk of the card's content.
                     </Card.Text>
-                    <Button variant="primary">Старт</Button>
+                    <Button variant="primary">Запустить нейросетевой обратный вывод</Button>
                 </Card.Body>
             </Card>    
             </Col>
