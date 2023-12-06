@@ -3,7 +3,20 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
+function classic(){
+    console.log('You clicked classic.');
+}
 
+function relevance(){
+    console.log('You clicked relevance.');
+}
+
+function clusterRelevance(){
+    console.log('You clicked cluster relevance.');
+}
+function neuroRelevance(){
+    console.log('You clicked neuro relevance.');
+}
 function BasicExample() {
   return (
     <Container>
@@ -16,7 +29,7 @@ function BasicExample() {
                             Some quick example text to build on the card title and make up the
                             bulk of the card's content.
                         </Card.Text>
-                        <Button variant="primary">Запустить классический обратный вывод</Button>
+                        <Button onClick = {classic} variant="primary">Запустить классический обратный вывод </Button>
                     </Card.Body>
                 </Card>
             </Col>
@@ -28,7 +41,7 @@ function BasicExample() {
                             Some quick example text to build on the card title and make up the
                             bulk of the card's content.
                         </Card.Text>
-                        <Button variant="primary">Запустить релевантный обратный вывод</Button>
+                        <Button  onClick = {relevance} variant="primary">Запустить релевантный обратный вывод</Button>
                     </Card.Body>
                 </Card>
             </Col>
@@ -42,7 +55,7 @@ function BasicExample() {
                         Some quick example text to build on the card title and make up the
                             bulk of the card's content.
                     </Card.Text>
-                    <Button variant="primary">Запустить кластерно-релевантный обратный вывод</Button>
+                    <Button onClick = {clusterRelevance} variant="primary">Запустить кластерно-релевантный обратный вывод</Button>
                 </Card.Body>
             </Card>  
             </Col>
@@ -54,7 +67,7 @@ function BasicExample() {
                         Some quick example text to build on the card title and make up the
                             bulk of the card's content.
                     </Card.Text>
-                    <Button variant="primary">Запустить нейросетевой обратный вывод</Button>
+                    <Button onClick = {neuroRelevance} variant="primary">Запустить нейросетевой обратный вывод</Button>
                 </Card.Body>
             </Card>    
             </Col>
