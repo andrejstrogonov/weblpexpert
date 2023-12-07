@@ -4,11 +4,17 @@ import './index.css';
 import reportWebVitals from './reportWebVitals';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import NavigationBar from './NavigationBar';
+import ReverseContainer from './ReverseContainer'
+import Variants from './Variants';
+import store from './app/store'
+import { Provider } from 'react-redux'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <NavigationBar/>
+    <ReverseContainer/>
+    <Variants/>
   </React.StrictMode>
 );
 
