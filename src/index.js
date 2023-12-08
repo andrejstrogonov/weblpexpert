@@ -11,11 +11,13 @@ import { Provider } from 'react-redux'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
-    <NavigationBar/>
-    <ReverseContainer/>
-    <Variants/>
-  </React.StrictMode>
+  <Provider store = {store}>
+    <React.StrictMode>
+      <NavigationBar/>
+      <ReverseContainer/>
+      <Variants/>
+    </React.StrictMode>
+  </Provider>
 );
 
 // If you want to start measuring performance in your app, pass a function
