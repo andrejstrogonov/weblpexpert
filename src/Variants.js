@@ -14,7 +14,7 @@ import AddIcon from '@mui/icons-material/Add';
 import Typography from '@mui/material/Typography';
 import { blue } from '@mui/material/colors';
 
-const emails = ['username@gmail.com', 'user02@gmail.com'];
+const variants = ['OK', 'No OK'];
 
 function SimpleDialog(props) {
   const { onClose, selectedValue, open } = props;
@@ -31,7 +31,7 @@ function SimpleDialog(props) {
     <Dialog onClose={handleClose} open={open}>
       <DialogTitle>Set backup account</DialogTitle>
       <List sx={{ pt: 0 }}>
-        {emails.map((email) => (
+        {variants.map((email) => (
           <ListItem disableGutters key={email}>
             <ListItemButton onClick={() => handleListItemClick(email)}>
               <ListItemAvatar>
@@ -69,7 +69,7 @@ SimpleDialog.propTypes = {
 
 export default function Variants() {
   const [open, setOpen] = React.useState(false);
-  const [selectedValue, setSelectedValue] = React.useState(emails[1]);
+  const [selectedValue, setSelectedValue] = React.useState(variants[1]);
 
   const handleClickOpen = () => {
     setOpen(true);
